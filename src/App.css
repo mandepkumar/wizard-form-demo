@@ -1,0 +1,76 @@
+.Main {
+  margin: 2rem 1rem;
+  padding: 2rem;
+
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+  min-width: 300px;
+  width: 300px;
+  border-radius: 0.5rem;
+}
+
+.BtnGroup {
+  * {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+.InLine {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+form {
+  div {
+    margin-bottom: 0.5rem;
+  }
+}
+.CustomNav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+
+  .CustomNavGroup {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .Circle {
+      width: 30px;
+      border-radius: 50%;
+      background-color: #9ca3af;
+      padding: 0.1rem;
+      text-align: center;
+      color: #ffffff;
+      font-weight: bolder;
+    }
+    .Bar {
+      flex: 1;
+      background-color: #9ca3af;
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
+      width: 100%;
+      height: 10px;
+      border-radius: 0.5rem;
+    }
+    .Nav-Curr {
+      background-color: #646cff;
+    }
+    .Nav-NotDone {
+      background-color: #201552;
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 650px) {
+  .Main {
+    width: 80vw;
+  }
+}
+@media (min-width: 650px) {
+  .Main {
+    width: 600px;
+  }
+}
